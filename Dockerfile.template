@@ -20,8 +20,8 @@ RUN apt-get install -y ros-melodic-ros-base
 # RUN apt-get install -y python-catkin-tools
 
 # Install needed ROS packages dependencies
-#RUN apt-get install -y ros-melodic-image-transport-plugins
-#RUN apt-get install -y ros-melodic-camera-info-manager ros-melodic-diagnostic-updater
+RUN apt-get install -y ros-melodic-image-transport-plugins
+RUN apt-get install -y ros-melodic-camera-info-manager ros-melodic-diagnostic-updater
 
 # Some dependencies are not recognized by ROS, required for raspicam_node
 RUN mkdir -p /etc/ros/rosdep/sources.list.d/
