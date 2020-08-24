@@ -7,7 +7,8 @@ export LANIFACE=$(ip route get 1.1.1.1 | grep -Po '(?<=dev\s)\w+' | cut -f1 -d '
 export HOST_IP=$(ifconfig ${LANIFACE} | awk '/inet / {print $2}')
 
 export ROS_HOSTNAME=${HOST_IP} 
-echo export ROS_HOSTNAME=${HOST_IP} >> ~/.bashrc
+#echo export ROS_HOSTNAME=${HOST_IP} >> ~/.bashrc
+echo export ROS_IP=${HOST_IP} >> ~/.bashrc
 
 # Default ROS master port is 11311
 #  - You could use 80 if accessing over the internet: roscore -p 80

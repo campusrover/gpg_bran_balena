@@ -1,0 +1,3 @@
+[submodule "ros/catkin_ws/src/gpg_bran4"]
+	path = ros/catkin_ws/src/gpg_bran4
+	url = git@github.com:campusrover/gpg_bran4.git
