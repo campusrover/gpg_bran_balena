@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Balena-ROS-Melodic"
+		},
+		{
+			"path": "../gpg_bran4"
+		}
+	],
+	"settings": {}
+}
