@@ -1,5 +1,5 @@
 #FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:bionic # original from Bernardo
-FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:focal # 
+FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:focal #xxx 
 
 RUN export DEBIAN_FRONTEND=noninteractive
 
