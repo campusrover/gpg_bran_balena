@@ -1,5 +1,5 @@
-#FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:bionic
-FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:stretch
+FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:bionic
+
 RUN export DEBIAN_FRONTEND=noninteractive
 
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu bionic main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -14,7 +14,6 @@ RUN dpkg-reconfigure --frontend noninteractive tzdata
 # ROS installation
 RUN apt-get install -y python-rosinstall python-rosinstall-generator python-wstool build-essential
 RUN apt-get install -y python-rosdep
-RUN apt-get install -y ros-melodic-actionlib
 RUN apt-get install -y ros-melodic-ros-base
 
 # Install catkin tools
