@@ -1,5 +1,4 @@
-#FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:bionic
-FROM balenalib/rpi-raspbian
+FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:bionic
 RUN export DEBIAN_FRONTEND=noninteractive
 
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu bionic main" > /etc/apt/sources.list.d/ros-latest.list'
