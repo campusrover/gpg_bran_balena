@@ -1,5 +1,5 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:bionic
-FROM balenalib/%%BALENA_MACHINE_NAME%%-raspian:stretch
+#FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:bionic
+FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:stretch
 RUN export DEBIAN_FRONTEND=noninteractive
 
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu bionic main" > /etc/apt/sources.list.d/ros-latest.list'
