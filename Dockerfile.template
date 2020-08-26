@@ -1,5 +1,9 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:focal 
 #FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:bionic # original from Bernardo
+
+# [main]     manifest for balenalib/raspberrypi3-64-ubuntu:focal not found
+# FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu:focal
+
+FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:stretch
 
 RUN export DEBIAN_FRONTEND=noninteractive
 
