@@ -1,0 +1,3 @@
+[submodule "ros/catkin_ws/src/ydlidar_ros"]
+	path = ros/catkin_ws/src/ydlidar_ros
+	url = https://github.com/YDLIDAR/ydlidar_ros.git
